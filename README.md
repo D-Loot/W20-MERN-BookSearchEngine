@@ -2,9 +2,16 @@
 
 ## Your Task
 
+Notes\21-MERN\01-Activities\tech-matchup-app-main\server\app
+
+vs
+
+Notes\21-MERN\01-Activities\tech-matchup-app-graphql\server\app
+
+
 Your assignment this week is emblematic of the fact that most modern websites are driven by two things: data and user demands. This shouldn't come as a surprise, as the ability to personalize user data is the cornerstone of real-world web development today. And as user demands evolve, applications need to be more performant.
 
-This week, you’ll take starter code with a fully functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server. The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end. 
+This week, you’ll take starter code with a fully functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server. The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end.
 
 To complete the assignment, you’ll need to do the following:
 
@@ -57,7 +64,7 @@ THEN I am presented with all of the books I have saved to my account, each featu
 WHEN I click on the Remove button on a book
 THEN that book is deleted from my saved books list
 WHEN I click on the Logout button
-THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
+THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
 ```
 
 
@@ -107,7 +114,7 @@ You’ll need to complete the following tasks in each of these back-end files:
 		* `Query` type:
 
 			* `me`: Which returns a `User` type.
-		
+
 		* `Mutation` type:
 
 			* `login`: Accepts an email and password as parameters; returns an `Auth` type.
@@ -117,7 +124,7 @@ You’ll need to complete the following tasks in each of these back-end files:
 			* `saveBook`: Accepts a book author's array, description, title, bookId, image, and link as parameters; returns a `User` type. (Look into creating what's known as an `input` type to handle all of these parameters!)
 
 			* `removeBook`: Accepts a book's `bookId` as a parameter; returns a `User` type.
-			
+
 		* `User` type:
 
 			* `_id`
@@ -170,12 +177,12 @@ You'll need to create the following front-end files:
 Additionally, you’ll need to complete the following tasks in each of these front-end files:
 
 * `App.js`: Create an Apollo Provider to make every request work with the Apollo Server.
-	
+
 * `SearchBooks.js`:
 
 	* Use the Apollo `useMutation()` Hook to execute the `SAVE_BOOK` mutation in the `handleSaveBook()` function instead of the `saveBook()` function imported from the `API` file.
 
-	* Make sure you keep the logic for saving the book's ID to state in the `try...catch` block! 
+	* Make sure you keep the logic for saving the book's ID to state in the `try...catch` block!
 
 * `SavedBooks.js`:
 
